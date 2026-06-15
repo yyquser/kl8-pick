@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Project-specific (large binaries, debug, temp)
+*.mp4
+*.mp3
+*.zip
+*.png
+*.jpg
+*.gif
+nul
+debug_*/
+temp_*/
+backup_*
+
+# node_modules (if any)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# WorkBuddy (project memory, not code)
+.workbuddy/
