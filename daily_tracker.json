@@ -1,0 +1,414 @@
+{
+  "recommendations": [
+    {
+      "date": "2026-05-31",
+      "from_issue": "2026140",
+      "target_issue": "2026141",
+      "pair": [
+        43,
+        14
+      ],
+      "strategy": "hot_tail",
+      "reason": "尾3(延续率100%)→43 | 尾4(延续率100%)→14",
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "from_issue": "2026142",
+      "target_issue": "2026143",
+      "pair": [
+        54,
+        43
+      ],
+      "strategy": "hot_tail",
+      "reason": "尾4(延续率100%)→54 | 尾3(延续率100%)→43",
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "from_issue": "2026143",
+      "target_issue": "2026144",
+      "pair": [
+        34,
+        47
+      ],
+      "strategy": "signal",
+      "reason": "143期信号: col6(07+47,R3) + col13(14+34,R2)",
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        34
+      ],
+      "checked_date": "2026-06-04",
+      "note": "信号策略中1个(34), 选二需中2个, 算MISS"
+    },
+    {
+      "date": "2026-06-04",
+      "from_issue": "2026144",
+      "target_issue": "2026145",
+      "pair": [
+        24,
+        63
+      ],
+      "strategy": "signal",
+      "reason": "A组: 24+63 (col3→R2+col2→R4)",
+      "group": "A",
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        24
+      ],
+      "checked_date": "2026-06-05",
+      "note": "24命中, 63未中"
+    },
+    {
+      "date": "2026-06-04",
+      "from_issue": "2026144",
+      "target_issue": "2026145",
+      "pair": [
+        24,
+        72
+      ],
+      "strategy": "signal",
+      "reason": "B组: 24+72 (col3→R2+col11→R4)",
+      "group": "B",
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        24
+      ],
+      "checked_date": "2026-06-05",
+      "note": "补录: 信号>=3应出2组, 24命中, 72未中"
+    },
+    {
+      "date": "2026-06-05",
+      "from_issue": "2026145",
+      "target_issue": "2026146",
+      "pair": [
+        14,
+        30
+      ],
+      "strategy": "hot_tail",
+      "reason": "尾4(延续率100%)→14 | 尾0(延续率94%)→30",
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        14
+      ],
+      "checked_date": "2026-06-06",
+      "note": "14命中, 30未中, 又是中1个"
+    },
+    {
+      "date": "2026-06-06",
+      "from_issue": "2026146",
+      "target_issue": "2026147",
+      "pair": [
+        27,
+        44
+      ],
+      "strategy": "signal",
+      "reason": "A组: 27+44 (col6→R2+col3→R3)",
+      "group": "A",
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-07",
+      "note": "27断(3连出后无), 44未中, 0中"
+    },
+    {
+      "date": "2026-06-06",
+      "from_issue": "2026146",
+      "target_issue": "2026147",
+      "pair": [
+        27,
+        54
+      ],
+      "strategy": "signal",
+      "reason": "B组: 27+54 (col6→R2+col13→R3)",
+      "group": "B",
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-07",
+      "note": "27断, 54未中, 0中"
+    },
+    {
+      "date": "2026-06-07",
+      "from_issue": "2026147",
+      "target_issue": "2026148",
+      "pair": [
+        7,
+        30
+      ],
+      "strategy": "signal",
+      "reason": "A组: col6→07(历史R1=30%>>belowR4=10%,样本10) | col9→30(历史R2=27.3%>>belowR3=18.2%,样本11)",
+      "group": "A",
+      "hit": true,
+      "note": "改进v2: 去掉30%阈值, 改差距判断(最优>below+5%即改用最优位置号) | 148期开出07+30, 全中!"
+    },
+    {
+      "date": "2026-06-07",
+      "from_issue": "2026147",
+      "target_issue": "2026148",
+      "pair": [
+        7,
+        52
+      ],
+      "strategy": "signal",
+      "reason": "B组: col6→07(历史R1=30%>>belowR4=10%) | col11→52(无历史数据,回退below)",
+      "group": "B",
+      "hit": false,
+      "note": "尾12+R1+R3无足够历史数据(样本<5),回退below号52, 52未出"
+    },
+    {
+      "date": "2026-06-07",
+      "from_issue": "2026147",
+      "target_issue": "2026148",
+      "pair": [
+        7,
+        30,
+        52
+      ],
+      "strategy": "signal",
+      "reason": "选二复式: 07+30+52 3注6元 | 148期开出07+30→07+30组合中奖!",
+      "group": "复式",
+      "hit": true,
+      "note": "用户决定选二复式, 07+30命中! 52未出, 但3注中1注选二即中奖"
+    },
+    {
+      "date": "2026-06-10",
+      "from_issue": "2026148",
+      "target_issue": "2026149",
+      "pair": [
+        51,
+        1
+      ],
+      "strategy": "signal",
+      "reason": "回溯: A组 col10→51(历史R3=30%>>belowR4=10%) + col0→01(历史R1=25%>>belowR3=0%)",
+      "group": "A",
+      "hit": false,
+      "note": "回溯分析, 149期实际未按系统推荐, 推荐51+01均未出"
+    },
+    {
+      "date": "2026-06-10",
+      "from_issue": "2026149",
+      "target_issue": "2026150",
+      "pair": [
+        22,
+        53
+      ],
+      "strategy": "signal",
+      "reason": "回溯: A组 col1→22(历史R2=30.8%>>belowR4=15.4%) + col12→53(历史R3=40%>>belowR2=20%)",
+      "group": "A",
+      "hit": false,
+      "note": "回溯分析, 150期开出53, 中1个但22未出, 选二需2个全中"
+    },
+    {
+      "date": "2026-06-10",
+      "from_issue": "2026150",
+      "target_issue": "2026151",
+      "pair": [
+        47,
+        38
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col6→47(历史R3=33.3%>>belowR2=11.1%) | col17→38(历史R2=33.3%>>belowR4=16.7%)",
+      "group": null,
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        38
+      ],
+      "checked_date": "2026-06-11",
+      "note": "151期开出38(中), 47未出, 选二需2个全中→MISS"
+    },
+    {
+      "date": "2026-06-11",
+      "from_issue": "151",
+      "target_issue": "152",
+      "pair": [
+        10,
+        52
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col9→10(历史R1=37.5%>>below=25.0%(样本8))[过热:5次] | col11→52(无历史数据,回退到below(52))[过热:4次]",
+      "group": null,
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-12",
+      "note": "152期0中! 10/52/70/12全MISS。尾0出了60(R3)而非10(R1),尾2出32(R2)+72(R4)而非12/52。两列都过热(5次/4次)。"
+    },
+    {
+      "date": "2026-06-12",
+      "from_issue": "152",
+      "target_issue": "153",
+      "pair": [
+        58,
+        3
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col17→58(差距不足5%(28.6%vs28.6%),回退below) | col2→03(历史R1=25.0%>>below=0.0%(样本12))[过热:5次]",
+      "group": null,
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-13",
+      "note": "153期: 58+3 → 中0个(0个), 全MISS"
+    },
+    {
+      "date": "2026-06-12",
+      "from_issue": "152",
+      "target_issue": "153",
+      "pair": [
+        58,
+        3,
+        63,
+        1
+      ],
+      "strategy": "signal+4号复式",
+      "reason": "4号复式(推荐+below): col17→58/58 + col2→03/63 (6注12元, 2列信号回测命中33.8%)",
+      "group": "4号复式",
+      "hit": false,
+      "hit_count": 1,
+      "hit_nums": [
+        1
+      ],
+      "checked_date": "2026-06-13",
+      "note": "153期: 58+3+63+1 → 中1个(1), 全MISS"
+    },
+    {
+      "date": "2026-06-13",
+      "from_issue": "153",
+      "target_issue": "154",
+      "pair": [
+        1,
+        19
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col0→01(历史R1=42.9%>>below=28.6%(样本7)) | col18→19(历史R1=25.0%>>below=8.3%(样本12))",
+      "group": null,
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-14"
+    },
+    {
+      "date": "2026-06-13",
+      "from_issue": "153",
+      "target_issue": "154",
+      "pair": [
+        1,
+        19,
+        21,
+        59
+      ],
+      "strategy": "signal+4号复式",
+      "reason": "4号复式(推荐+below): col0→01/21 + col18→19/59 (6注12元, 2列信号回测命中33.8%)",
+      "group": "4号复式",
+      "hit": false,
+      "hit_count": 0,
+      "hit_nums": [],
+      "checked_date": "2026-06-14"
+    },
+    {
+      "date": "2026-06-14",
+      "from_issue": "154",
+      "target_issue": "155",
+      "pair": [
+        27,
+        30
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col6→27(历史R2=44.4%>>below=11.1%(样本9)) | col9→30(历史R2=27.3%>>below=18.2%(样本11))",
+      "group": null,
+      "hit": true,
+      "hit_count": 2,
+      "hit_nums": [
+        27,
+        30
+      ],
+      "checked_date": "2026-06-15",
+      "note": "155期开出27+30, 单注中奖! 奖金28元, 净赚26元"
+    },
+    {
+      "date": "2026-06-14",
+      "from_issue": "154",
+      "target_issue": "155",
+      "pair": [
+        50,
+        27,
+        30,
+        47
+      ],
+      "strategy": "signal+4号复式",
+      "reason": "4号复式(推荐+below): col6→27/47 + col9→30/50 (6注12元, 2列信号回测命中33.8%)",
+      "group": "4号复式",
+      "hit": true,
+      "hit_count": 2,
+      "hit_nums": [
+        27,
+        30
+      ],
+      "checked_date": "2026-06-15",
+      "note": "中2个号(27+30), C(2,2)=1注×28=28元, 成本12元, 净赚16元"
+    },
+    {
+      "date": "2026-06-14",
+      "from_issue": "154",
+      "target_issue": "155",
+      "pair": [
+        27,
+        37,
+        30,
+        12
+      ],
+      "strategy": "signal+4号复式(去重前)",
+      "reason": "第一次推荐(尾数去重前): col6→27 + col16→37 + col9→30 + 纯R1 col11→12 (6注12元)",
+      "group": "4号复式(去重前)",
+      "hit": true,
+      "hit_count": 3,
+      "hit_nums": [
+        27,
+        30,
+        12
+      ],
+      "checked_date": "2026-06-15",
+      "note": "中3个号!!! 27+30+12, C(3,2)=3注×28=84元, 成本12元, 净赚72元! 用户怀疑12没买, 错失72元"
+    },
+    {
+      "date": "2026-06-15",
+      "from_issue": "155",
+      "target_issue": "156",
+      "pair": [
+        10,
+        47
+      ],
+      "strategy": "signal",
+      "reason": "信号2列: col9→10(历史R1=27.3%>>below=18.2%(样本11)) | col6→47(历史R3=30.0%>>below=20.0%(样本10))",
+      "group": null,
+      "hit": null
+    },
+    {
+      "date": "2026-06-15",
+      "from_issue": "155",
+      "target_issue": "156",
+      "pair": [
+        10,
+        47,
+        30,
+        27
+      ],
+      "strategy": "signal+4号复式",
+      "reason": "4号复式(推荐+below+below): col9→10 + col6→47 (6注12元, 2列信号回测命中33.8%)",
+      "group": "4号复式",
+      "hit": null
+    }
+  ]
+}
